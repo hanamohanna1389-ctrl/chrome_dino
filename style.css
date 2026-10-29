@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(147, 177, 202);
+}
+
+.game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 20px;
+    display: flex;
+    align-items: end;
+}
+
+.dino {
+    width: 60px;
+    height: 60px;
+}
+
+.animate {
+    animation: jump 0.3s ease-in;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-60px);
+    }
+
+    50% {
+        transform: translateY(-120px);
+    }
+
+    70% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.tree {
+    width: 60px;
+    height: 60px;
+    animation: tree 1s infinite linear;
+}
+
+@keyframes tree {
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+.showing-score {
+    margin-top: 50px;
+    font-weight: 900;
+}
+
+.refresh {
+    font-size: 20px;
+    margin-top: 30px;
+    opacity: 0;
+}
