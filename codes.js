@@ -34,6 +34,7 @@ function start_game() {
             clearInterval(score_interval);
             clearInterval(check_position);
             refresh.style.opacity = 1;
+            refresh.style.pointerEvents = "auto";
             counter = 0;
         }
     }, 10);
@@ -54,6 +55,7 @@ start_game()
 
 function Refresh() {
     refresh.style.opacity = 0;
+    refresh.style.pointerEvents = "none";
     start_game();
 }
 
