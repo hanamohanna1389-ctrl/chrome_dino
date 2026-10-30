@@ -14,18 +14,17 @@ body {
 }
 
 .game {
-    width: 500px;
-    height: 200px;
+    width: 50vw;
+    height: 14vw;
     border: 1px solid black;
     margin-top: 20px;
     display: flex;
     align-items: end;
-    overflow: hidden;
 }
 
 .dino {
-    width: 60px;
-    height: 60px;
+    width: 4vw;
+    height: 4vw;
 }
 
 .animate {
@@ -34,39 +33,39 @@ body {
 
 @keyframes jump {
     0% {
-        transform: translateY(0px);
+        transform: translateY(0vw);
     }
 
     30% {
-        transform: translateY(-60px);
+        transform: translateY(-4vw);
     }
 
     50% {
-        transform: translateY(-120px);
+        transform: translateY(-8vw);
     }
 
     70% {
-        transform: translateY(-60px);
+        transform: translateY(-4vw);
     }
 
     100% {
-        transform: translateY(0px);
+        transform: translateY(0vw);
     }
 }
 
 .tree {
-    width: 60px;
-    height: 60px;
+    width: 4vw;
+    height: 4vw;
     animation: tree 1s infinite linear;
 }
 
 @keyframes tree {
     0% {
-        transform: translateX(500px);
+        transform: translateX(50vw);
     }
 
     100% {
-        transform: translateX(-100px);
+        transform: translateX(-15vw);
     }
 }
 
@@ -75,8 +74,40 @@ body {
     font-weight: 900;
 }
 
+.best-record {
+    margin-top: 30px;
+    font-weight: 900;
+}
+
 .refresh {
     font-size: 20px;
     margin-top: 30px;
     opacity: 0;
+}
+
+@media screen and (max-width:700px) {
+    .game {
+        width: 60vw;
+        height: 16vw;
+    }
+
+    .dino {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .tree {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    @keyframes tree {
+        0% {
+            transform: translateX(60vw);
+        }
+
+        100% {
+            transform: translateX(-15vw);
+        }
+    }
 }
