@@ -87,23 +87,23 @@ body {
 
 @media screen and (max-width:700px) {
     .game {
-        width: 60vw;
-        height: 16vw;
+        width: 65vw;
+        height: 18vw;
     }
 
     .dino {
-        width: 6vw;
-        height: 6vw;
+        width: 8vw;
+        height: 8vw;
     }
 
     .tree {
-        width: 6vw;
-        height: 6vw;
+        width: 8vw;
+        height: 8vw;
     }
 
     @keyframes tree {
         0% {
-            transform: translateX(60vw);
+            transform: translateX(65vw);
         }
 
         100% {
