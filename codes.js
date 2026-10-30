@@ -12,7 +12,7 @@ let score_interval;
 let check_position;
 
 tree.style.animationPlayState = "paused";
-
+best_record.innerHTML = localStorage.getItem("best_record") || 0;
 
 function start_game() {
     clearInterval(score_interval);
@@ -24,7 +24,7 @@ function start_game() {
     tree.style.animation = "tree 1s infinite linear";
     tree.style.animationPlayState = "running";
 
-    best_record.innerHTML = localStorage.getItem("best_record") || 0;
+    
 
     score_interval = setInterval(function () {
         counter++;
