@@ -56,7 +56,7 @@ body {
 .tree {
     width: 4vw;
     height: 4vw;
-    animation: tree 1s infinite linear;
+    animation: tree 1.7s infinite linear;
 }
 
 @keyframes tree {
@@ -99,6 +99,8 @@ body {
     .tree {
         width: 8vw;
         height: 8vw;
+        animation: tree 1.7s infinite linear;
+
     }
 
     @keyframes tree {
